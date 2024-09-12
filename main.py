@@ -5,7 +5,7 @@ device = deviceID()
 def Password():
     global symbol_pass
     symbol_pass = []
-    password = input("Введите пароль: ")
+    password = input("Enter password: ")
     symbol_pass += list(map(str, *f"{password}".split(" ")))
 
 def unlock_mobile(symbol_pass):
@@ -17,3 +17,4 @@ def unlock_mobile(symbol_pass):
         d(text=symbol_pass[i]).click()
 Password()
 unlock_mobile(symbol_pass)
+print("SUCCESS!")
