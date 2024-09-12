@@ -1,6 +1,6 @@
 import uiautomator2 as u2
-
-device = "adb-af38ae38-H0UxOX._adb-tls-connect._tcp"
+from deviceID import deviceID
+device = deviceID()
 
 def Password():
     global symbol_pass
